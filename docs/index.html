@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- Detect if the site is running in mobile -->
+    <!-- Title -->
+    <title>Snatch - Scratch Extension</title>
+    <!-- JQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!-- Global JS -->
+    <script src="global.js"></script>
+    <!-- Menu JS -->
+    <script src="menu.js"></script>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
+  <body style="background-color: #00bfff">
+    <!-- Title -->
+    <a href="https://github.com/snatchextension" style="text-decoration: none; color: black">
+        <h1 style="text-align: center" class="rainbow">Snatch</h1></a>
+    <!-- GitHub link note-->
+    <p style="text-align: center; color: black">
+      (click the text above to go to the GitHub page)
+    </p>
+    <!-- Introductory text -->
+    <p
+      class="introductory"
+      style="
+        border: 2px solid black;
+        border-radius: 10px;
+        padding: 10px;
+        background-color: white;
+      ">
+      Snatch is a Scratch extension that <i>you</i>, granted you have the skills
+      to, can edit! <br />To join, simply make an issue with the title "Please
+      include me!" and a staff member will add you eventually. <br />
+      To make a GitHub account, go to <a href="https://github.com">github.com</a>
+      and click "Sign up".
+    </p>
+    <!-- Menu button -->
+    <div class="topnav" style="position: absolute; top: 0; left: 0;">
+      <a href="javascript:void(0)" onclick="addMenu()">
+        <i class="fa fa-bars"></i>
+      </a>
+    </div>
+    <!-- Menu -->
+    <iframe id="menu" src="menu.html" style="display: none; position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe>
+  </body>
+</html>
