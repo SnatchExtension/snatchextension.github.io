@@ -82,6 +82,17 @@ class SnatchJoke{
           opcode: 'snj_random',
           blockType: BlockType.BOOLEAN,
           text: 'randomly select true or false'
+        },
+        {
+          opcode: 'snj_alert',
+          blockType: BlockType.COMMAND,
+          text: 'alert',
+          arguments: {
+                    IN: {
+                        type: ArgumentType.STRING,
+                        defaultValue: 'text',
+                    },
+          },
         }
       ]
     }
@@ -102,6 +113,10 @@ snj_random (args, util){
   else{
     return true
   }
+}
+  
+snj_alert (args, util) {
+  alert(args.IN)
 }
 
 cppComm(gen){
